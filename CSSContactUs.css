@@ -1,0 +1,167 @@
+﻿body {
+    margin: 0;
+}
+
+.contactform {
+    display: grid;
+    grid-template-areas: 'header' 'contactus' '1' '2' '3' '4' 'footer';
+}
+
+.logo {
+   grid-area:contactus;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#applelogo {
+    width: 150px;
+    padding-top: 20px;
+}
+
+.logo p {
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+form {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: lightgray;
+    border-width: 3px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+
+.c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#f1 {
+    grid-area: 1;
+}
+
+#f2 {
+    grid-area: 2;
+}
+
+#f3 {
+    grid-area: 3;
+}
+
+#f4 {
+    grid-area: 4;
+    justify-content: center;
+}
+
+#subject {
+    width: 165px;
+    font-size: 25px;
+}
+
+#submit {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+}
+
+#image2 {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+
+/*Navbar*/
+.navbar {
+    background-image: linear-gradient(black,#404040);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    grid-area: header;
+}
+
+    .navbar a {
+        color: lightgray;
+        font-weight: bold;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+        .navbar a:hover {
+            color: white;
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+
+    .navbar li {
+        margin: auto;
+    }
+
+.active-page a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 500px;
+    margin: auto;
+    grid-area: footer;
+}
+
+    footer a {
+        color: gray;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+.footerimg {
+    width: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    /*Navbar*/
+    .navbar {
+        flex-direction: column;
+        height: 200px;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    /*footer*/
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+}

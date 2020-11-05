@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Kontaktsida</title>
+    <link rel="stylesheet" href="CSSContactUs.css">
+</head>
+
+<body>
+    <div class="contactform">
+
+        <ul class="navbar">
+            <li><a href="HTMLStartpage.html">Home</a></li>
+            <li><a href="HTMLGallery.html">Gallery</a></li>
+            <li class="active-page"><a href="HTMLContactUs.html">Contact us</a></li>
+            <li><a href="HTMLValfrisida.html">Product Info</a></li>
+        </ul>
+
+        <div class="logo">
+            <img id="applelogo" alt="Apple logo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi2.wp.com%2Fwww.leoprinting.nl%2Fblog%2Fwp-content%2Fuploads%2F2017%2F02%2FApple_logo_black.png%3Fssl%3D1&f=1&nofb=1" />
+            <p>Contact us</p>
+        </div>
+
+        <form action="mailto::epost@email.com" method="get">
+            <div class="c" id="f1">
+                <label>Name:         </label>
+                <input type="text" placeholder="name" required id="name" />
+            </div>
+
+            <div class="c" id="f2">
+                <label>Email address:</label>
+                <input type="email" placeholder="email@email.com" required id="email" />
+            </div>
+
+            <div class="c" id="f3">
+                <label>Subject:</label>
+                <select id="subject">
+                    <option value="1">iPhone</option>
+                    <option value="2">Mac</option>
+                    <option value="3">iPad</option>
+                    <option value="4">Watch</option>
+                    <option value="5">Music</option>
+                    <option value="6">TV</option>
+                    <option value="7">other</option>
+                </select>
+            </div>
+
+            <div class="c" id="f4">
+                <input type="submit" name="submit" value="submit" id="submit" />
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <a href="https://sv-se.facebook.com/"> <img class="footerimg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qr_9JBzl04QgGIDmBFIbBAHaHa%26pid%3DApi&f=1" alt="Facebook" /></a>
+        <a href=""> Address: blablavägen 123 </a>
+        <a href=""> Phone: 1111-222 33 </a>
+        <a href="https://www.instagram.com/apple/"> <img class="footerimg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Figreviews.org%2Fwp-content%2Fuploads%2F2018%2F08%2Finstagram-logo.png&f=1&nofb=1" alt="Instagram" /></a>
+    </footer>
+
+</body>
+</html>
